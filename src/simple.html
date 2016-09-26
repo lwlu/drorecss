@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>DEMO简易表单</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/less" href="less/drore.less" />
+		<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+
+	<body>
+		<div class="drore-top">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header logo">
+						<img src="" /> XX管理中心
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">功能1<span class="badge">14</span></a> </li>
+							<li><a href="#">功能2</a></li>
+							<li><a href="#">功能3</a></li>
+						</ul>
+					</div>
+					<div class="user-info">
+
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="drore-left">
+			<ul class="list-group">
+				<li class="list-group-item  active">
+					<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+					<span class="badge">14</span> Cras justo odio
+				</li>
+				<li class="list-group-item">
+				<i class="fa fa-home"></i>	<span class="glyphicon glyphicon-adjust" aria-hidden="true"></span> <span class="badge">14</span>Dapibus ac facilisis in
+				</li>
+				<li class="list-group-item">
+					<span class="glyphicon glyphicon-baby-formula" aria-hidden="true"></span> Morbi leo risus
+				</li>
+				<li class="list-group-item">
+					<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Dapibus ac facilisis in
+				</li>
+				<li class="list-group-item">
+					<span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> Morbi leo risus
+				</li>
+				<li class="list-group-item">
+					<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Dapibus ac facilisis in
+				</li>
+				<li class="list-group-item">
+					<span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Morbi leo risus
+				</li>
+			</ul>
+
+			<li class="active">
+				<a href="#">
+					<i class="fa fa-home"></i>
+					<span class="nav-label">主页</span>
+					<span class="fa arrow"></span>
+				</a>
+				<ul>
+					<li>
+						<a>主页示例一</a>
+					</li>
+
+				</ul>
+
+			</li>
+		</div>
+
+		<div class="drore-main">
+			<ol class="breadcrumb">
+				<li><span class="glyphicon glyphicon-map-marker"></span><a href="#">用户中心</a></li>
+				<li><a href="#">项目1</a></li>
+				<li class="active">功能1</li>
+			</ol>
+			<ul id="myTabs" class="nav nav-tabs">
+				<li class="active"><a>子功能1</a></li>
+				<li role="presentation"><a>子功能1</a></li>
+				<li role="presentation"><a>子功能1</a></li>
+				<li role="presentation"><a>子功能1</a></li>
+			</ul>
+			<div class="table-responsive">
+				<div class="table-head">
+					<div class="form-group table-left btn-bar">
+
+						<button type="button" class="btn btn-primary">（首选项）Primary</button>
+						<button type="button" class="btn btn-primary">（首选项）Primary</button>
+						<button type="button" class="btn btn-primary">（首选项）Primary</button>
+						<div data-toggle="buttons" class="btn-group">
+							<label class="btn btn-sm btn-white active">
+                                                    <input type="radio" id="option1" name="options">天</label>
+							<label class="btn btn-sm btn-white">
+                                                    <input type="radio" id="option2" name="options">周</label>
+							<label class="btn btn-sm btn-white">
+                                                    <input type="radio" id="option3" name="options">月</label>
+						</div>
+					</div>
+					<div class="form-group table-left-label">
+						<label for="">某个鬼</label>
+					</div>
+					<div class="form-group table-left">
+						<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+					</div>
+					<div class="form-group table-left-label">
+						<label for="">某个鬼1</label>
+					</div>
+					<div class="form-group table-left">
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+					</div>
+					<div class="form-group table-left-label">
+						<label for="">某个鬼1</label>
+					</div>
+					<div class="form-group table-left">
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+					</div>
+					<div class="form-group table-left">
+						<button type="button" class="btn btn-primary">（首选项）Primary</button>
+					</div>
+
+					<div class="input-group table-right">
+
+						<input type="text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+					</div>
+				</div>
+				<table class="table table-bordered" style="text-align: center;">
+					<thead>
+						<tr class="active">
+							<th>#</th>
+							<th>Table heading</th>
+							<th>Table heading</th>
+							<th>Table heading</th>
+							<th>Table heading</th>
+							<th>Table heading</th>
+							<th>Table heading</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td><a class="btn btn-primary glyphicon"><span class="glyphicon glyphicon-exclamation-sign">
+								
+							</span>编辑</a><a class="btn btn-primary">编辑</a></td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td><a class="btn btn-warning"><span class="glyphicon glyphicon-remove">
+								
+							</span>删除</a></td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td></td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td><a class="btn btn-primary">编辑</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-bordered table-h15" style="text-align: center;">
+					<thead>
+						<tr class="active">
+							<th>#</th>
+							<th>Table heading</th>
+							<th>Table heading</th>
+							<th>Table heading</th>
+							<th>Table heading</th>
+							<th>Table heading</th>
+							<th>Table heading</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td></td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td>Table cell</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!--左侧-->
+
+		<form class="drore-main form-horizontal" style="width: 400px;clear: both;">
+			<h1>简单的表单组件</h1>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">@</span>
+					<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1"></span>
+					<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+				</div>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+					</div>
+				</div>
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+					<span class="input-group-addon" id="basic-addon2">@example.com</span>
+				</div>
+
+				<div class="input-group">
+					<span class="input-group-addon">$</span>
+					<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+					<span class="input-group-addon">.00</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputFile">File input</label>
+				<input type="file" id="exampleInputFile">
+				<p class="help-block">Example block-level help text here.</p>
+			</div>
+
+			<div class="checkbox">
+				<label>
+      <input type="checkbox"> Check me out
+    </label>
+			</div>
+			<div class="input-group">
+				<span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+				<input type="text" class="form-control" placeholder="Search for...">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+				<input type="text" class="form-control" aria-label="...">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon">
+        <input type="radio" aria-label="...">
+      </span>
+				<input type="text" class="form-control" aria-label="...">
+			</div>
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search for...">
+				<span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+			</div>
+
+			<!-- /.row -->
+			<div class="checkbox">
+				<label>
+    <input type="checkbox" value="">
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+			</div>
+			<div class="checkbox disabled">
+				<label>
+    <input type="checkbox" value="" disabled>
+    Option two is disabled
+  </label>
+			</div>
+
+			<div class="radio">
+				<label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+			</div>
+			<div class="radio">
+				<label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Option two can be something else and selecting it will deselect option one
+  </label>
+			</div>
+			<div class="radio disabled">
+				<label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+    Option three is disabled
+  </label>
+			</div><label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+</label>
+			<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+</label>
+			<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+</label>
+
+			<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+</label>
+			<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+</label>
+			<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+</label>
+			<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+			<select multiple class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select> 错误验证表单样式
+			<div class="form-group has-success">
+				<label class="control-label" for="inputSuccess1">Input with success</label>
+				<input type="text" class="form-control" id="inputSuccess1">
+			</div>
+			<div class="form-group has-warning">
+				<label class="control-label" for="inputWarning1">Input with warning</label>
+				<input type="text" class="form-control" id="inputWarning1">
+			</div>
+			<div class="form-group has-error">
+				<label class="control-label" for="inputError1">Input with error</label>
+				<input type="text" class="form-control" id="inputError1">
+			</div>
+			<div class="has-success">
+				<div class="checkbox">
+					<label>
+      <input type="checkbox" id="checkboxSuccess" value="option1">
+      Checkbox with success
+    </label>
+				</div>
+			</div>
+			<div class="has-warning">
+				<div class="checkbox">
+					<label>
+      <input type="checkbox" id="checkboxWarning" value="option1">
+      Checkbox with warning
+    </label>
+				</div>
+			</div>
+			<div class="has-error">
+				<div class="checkbox">
+					<label>
+      <input type="checkbox" id="checkboxError" value="option1">
+      Checkbox with error
+    </label>
+				</div>
+			</div>
+			<div class="form-group has-success has-feedback">
+				<label class="control-label" for="inputSuccess2">Input with success</label>
+				<input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+				<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+				<span id="inputSuccess2Status" class="sr-only">(success)</span>
+			</div>
+			<div class="form-group has-warning has-feedback">
+				<label class="control-label" for="inputWarning2">Input with warning</label>
+				<input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+				<span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+				<span id="inputWarning2Status" class="sr-only">(warning)</span>
+			</div>
+			<div class="form-group has-error has-feedback">
+				<label class="control-label" for="inputError2">Input with error</label>
+				<input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+				<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+				<span id="inputError2Status" class="sr-only">(error)</span>
+			</div>
+			<div class="form-group has-success has-feedback">
+				<label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+				<div class="input-group">
+					<span class="input-group-addon">@</span>
+					<input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+				</div>
+				<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+				<span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+			</div>
+
+			<!-- Standard button -->
+			<button type="button" class="btn btn-default">（默认样式）Default</button>
+
+			<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+			<button type="button" class="btn btn-primary">（首选项）Primary</button>
+
+			<!-- Indicates a successful or positive action -->
+			<button type="button" class="btn btn-success">（成功）Success</button>
+
+			<!-- Contextual button for informational alert messages -->
+			<button type="button" class="btn btn-info">（一般信息）Info</button>
+
+			<!-- Indicates caution should be taken with this action -->
+			<button type="button" class="btn btn-warning">（警告）Warning</button>
+
+			<!-- Indicates a dangerous or potentially negative action -->
+			<button type="button" class="btn btn-danger">（危险）Danger</button>
+
+			<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+			<button type="button" class="btn btn-link">（链接）Link</button>
+		</form>
+		<div class="drore-main">
+			<h1>复杂的组件（非原生），每个都有一个JS依赖</h1>
+			<h2>layer弹出层</h2>
+			<script src="js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+			<button type="button" id="J_layer_btn1" class="btn btn-default">是否</button>
+			<button type="button" id="J_layer_btn2" class="btn btn-default">成功</button>
+			<button type="button" id="J_layer_btn3" class="btn btn-default">错误</button>
+			<button type="button" id="J_layer_btn4" class="btn btn-default">无权限</button>
+			<script type="text/javascript">
+				$("#J_layer_btn1").click(function() {
+					layer.confirm('您是如何看待前端开发？', {
+						btn: ['重要', '奇葩'] //按钮
+					}, function() {
+						layer.msg('的确很重要', {
+							icon: 1
+						});
+					}, function() {
+						layer.msg('的确很奇葩', {
+							icon: 1
+						});
+					});
+				})
+				$("#J_layer_btn2").click(function() {
+					layer.msg('成功删除4条信息', {
+						icon: 1
+					});
+				})
+				$("#J_layer_btn3").click(function() {
+					layer.msg('请求错误，请稍候再试', {
+						icon: 2
+					});
+				})
+				$("#J_layer_btn4").click(function() {
+					layer.msg('您目前没有权限', {
+						icon: 0
+					});
+				})
+			</script>
+			<h2>分页</h2>
+			<script src="js/laypage/laypage.js" type="text/javascript" charset="utf-8"></script>
+			<div id="Pagination1"></div>
+
+			<script type="text/javascript">
+				$(function() {
+					function demo(page, curr) {
+						$.ajax({
+							type: "post",
+							url: "http://112.124.10.154:8152/cms/team/list.json",
+							dataType: "jsonp",
+							data: {
+								"page_size": "1",
+								"current_page": page || "1",
+								"condition": undefined,
+								mapId: 'c9404793a2d940e5afd95e5224489d6a'
+							},
+							success: function(result) {
+								laypage({
+									cont: 'Pagination1',
+									pages: result.total_page,
+									curr: page || 1,
+									jump: function(obj, first) {
+										if (!first) { //点击跳页触发函数自身，并传递当前页：obj.curr 
+											demo(search, obj.curr);
+										}
+									}
+								});
+							}
+						});
+					};
+					//运行
+					demo();
+				})
+			</script>
+			<h2>多选框</h2>
+			<link rel="stylesheet" type="text/css" href="js/chosen/chosen.css" />
+			<script src="js/chosen/chosen.js" type="text/javascript" charset="utf-8"></script>
+
+			<select id="J_test1" data-placeholder="请选择短信接受人" style="width: 600px;" multiple="true">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+			<script type="text/javascript">
+				$(function() {
+					$("#J_test1").chosen();
+				})
+			</script>
+
+			<h2>日期框</h2>
+			<h2>单选</h2>
+			<div class="switch">
+				<input type="checkbox" checked />
+			</div>
+			<script src="js/bootstrap-switch.js" type="text/javascript" charset="utf-8"></script>
+			<link rel="stylesheet" type="text/css" href="css/bootstrap-switch.css" />
+			<script type="text/javascript">
+				$(function() {
+					$(".switch input").bootstrapSwitch();
+				})
+			</script>
+
+			<script src="js/icheck.js" type="text/javascript" charset="utf-8"></script>
+			<link rel="stylesheet" type="text/css" href="css/skins/all.css" />
+			<div class="demo-list">
+				<input tabindex="1" type="checkbox" id="input-1">
+				<label for="input-1">Checkbox, <span>#input-1</span></label>
+
+				<input tabindex="2" type="checkbox" id="input-2" checked>
+				<label for="input-2">Checkbox, <span>#input-2</span></label>
+
+				<input tabindex="3" type="radio" id="input-3" name="demo-radio">
+				<label for="input-3">Radio button, <span>#input-3</span></label>
+
+				<input tabindex="4" type="radio" id="input-4" name="demo-radio" checked>
+				<label for="input-4">Radio button, <span>#input-4</span></label>
+			</div>
+			<script>
+				$(document).ready(function() {
+					var callbacks_list = $('.demo-callbacks ul');
+					$('.demo-list input').on('ifCreated ifClicked ifChanged ifChecked ifUnchecked ifDisabled ifEnabled ifDestroyed', function(event) {
+						callbacks_list.prepend('<li><span>#' + this.id + '</span> is ' + event.type.replace('if', '').toLowerCase() + '</li>');
+					}).iCheck({
+						checkboxClass: 'icheckbox_square-blue',
+						radioClass: 'iradio_square-blue',
+						increaseArea: '20%'
+					});
+				});
+			</script>
+		</div>
+	</body>
+
+</html>

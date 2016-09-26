@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Demo简易表单</title>
+		<!--页面需加载的css-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<!--自己的css-->		
+		<link rel="stylesheet" type="text/css" href="less/drore.css"/>			
+	</head>
+
+	<body>
+		<div class="row wrapper wrapper-content animated fadeInRight">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Bootstrap Tree View 简介</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <p>Bootstrap Tree View 是一个简单而优雅的Bootstrap树形视图解决方案。
+                        <br>您可以访问作者的
+                        <a href="javascript:if(confirm(%27https://github.com/jonmiles/bootstrap-treeview  \n\nThis file was not retrieved by Teleport Pro, because it is addressed using an unsupported protocol (e.g., gopher).  \n\nDo you want to open it from the server?%27))window.location=%27https://github.com/jonmiles/bootstrap-treeview%27" tppabs="https://github.com/jonmiles/bootstrap-treeview" target="_blank">GitHub页面</a> 了解其用法及更多信息。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>默认</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div id="treeview1" class="test"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>收起</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div id="treeview2" class="test"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>展开</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div id="treeview3" class="test"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>蓝色主题</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div id="treeview4" class="test"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>自定义图标</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div id="treeview5" class="test"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>使用徽章作为标签</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div id="treeview6" class="test"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>无边框</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div id="treeview7" class="test"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>多彩</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div id="treeview8" class="test"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>节点覆盖</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div id="treeview9" class="test"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>使用链接</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div id="treeview10" class="test"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>事件</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="col-sm-6">
+                        <div id="treeview11" class="test"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>事件输出：</h5>
+                        <hr>
+                        <div id="event_output"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>JSON数据</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#" >
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#" >选项1</a>
+                            </li>
+                            <li><a href="buttons.html#" >选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div id="treeview12" class="test"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+		<!--框架JS-->
+		<script src="js/lib/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/less.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		<!--自己的js-->
+		<script src="js/lib/drore.UI.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+	var e = [{
+			text: "父节点 1",
+			href: "#parent1",
+			tags: ["4"],
+			nodes: [{
+				text: "子节点 1",
+				href: "#child1",
+				tags: ["2"],
+				nodes: [{
+					text: "孙子节点 1",
+					href: "#grandchild1",
+					tags: ["0"]
+				}, {
+					text: "孙子节点 2",
+					href: "#grandchild2",
+					tags: ["0"]
+				}]
+			}, {
+				text: "子节点 2",
+				href: "#child2",
+				tags: ["0"]
+			}]
+		}, {
+			text: "父节点 2",
+			href: "#parent2",
+			tags: ["0"]
+		}, {
+			text: "父节点 3",
+			href: "#parent3",
+			tags: ["0"]
+		}, {
+			text: "父节点 4",
+			href: "#parent4",
+			tags: ["0"]
+		}, {
+			text: "父节点 5",
+			href: "#parent5",
+			tags: ["0"]
+		}],
+		o = [{
+			text: "父节点 1",
+			tags: ["2"],
+			nodes: [{
+				text: "子节点 1",
+				tags: ["3"],
+				nodes: [{
+					text: "孙子节点 1",
+					tags: ["6"]
+				}, {
+					text: "孙子节点 2",
+					tags: ["3"]
+				}]
+			}, {
+				text: "子节点 2",
+				tags: ["3"]
+			}]
+		}, {
+			text: "父节点 2",
+			tags: ["7"]
+		}, {
+			text: "父节点 3",
+			icon: "glyphicon glyphicon-earphone",
+			href: "#demo",
+			tags: ["11"]
+		}, {
+			text: "父节点 4",
+			icon: "glyphicon glyphicon-cloud-download",
+			href: "www.baidu.com",
+			tags: ["19"],
+			selected: !0
+		}, {
+			text: "父节点 5",
+			icon: "glyphicon glyphicon-certificate",
+			color: "pink",
+			backColor: "red",
+			href: "http://www.tesco.com/",
+			tags: ["available", "0"]
+		}],
+		t = '[{"text": "父节点 1","nodes": [{"text": "子节点 1","nodes": [{"text": "孙子节点 1"},{"text": "孙子节点 2"}]},{"text": "子节点 2"}]},{"text": "父节点 2"},{"text": "父节点 3"},{"text": "父节点 4"},{"text": "父节点 5"}]';
+	$("#treeview1").treeview({
+		data: e
+	}), $("#treeview2").treeview({
+		levels: 1,
+		data: e
+	}), $("#treeview3").treeview({
+		levels: 99,
+		data: e
+	}), $("#treeview4").treeview({
+		color: "#428bca",
+		data: e
+	}), $("#treeview5").treeview({
+		color: "#428bca",
+		expandIcon: "glyphicon glyphicon-chevron-right",
+		collapseIcon: "glyphicon glyphicon-chevron-down",
+		nodeIcon: "glyphicon glyphicon-bookmark",
+		data: e
+	}), $("#treeview6").treeview({
+		color: "#428bca",
+		expandIcon: "glyphicon glyphicon-stop",
+		collapseIcon: "glyphicon glyphicon-unchecked",
+		nodeIcon: "glyphicon glyphicon-user",
+		showTags: !0,
+		data: e
+	}), $("#treeview7").treeview({
+		color: "#428bca",
+		showBorder: !1,
+		data: e
+	}), $("#treeview8").treeview({
+		expandIcon: "glyphicon glyphicon-stop",
+		collapseIcon: "glyphicon glyphicon-unchecked",
+		nodeIcon: "glyphicon glyphicon-user",
+		color: "yellow",
+		backColor: "purple",
+		onhoverColor: "orange",
+		borderColor: "red",
+		showBorder: !1,
+		showTags: !0,
+		highlightSelected: !0,
+		selectedColor: "yellow",
+		selectedBackColor: "darkorange",
+		data: e
+	}), $("#treeview9").treeview({
+		expandIcon: "glyphicon glyphicon-stop",
+		collapseIcon: "glyphicon glyphicon-unchecked",
+		nodeIcon: "glyphicon glyphicon-user",
+		color: "yellow",
+		backColor: "purple",
+		onhoverColor: "orange",
+		borderColor: "red",
+		showBorder: !1,
+		showTags: !0,
+		highlightSelected: !0,
+		selectedColor: "yellow",
+		selectedBackColor: "darkorange",
+		data: o
+	}), $("#treeview10").treeview({
+		color: "#428bca",
+		enableLinks: !0,
+		data: e
+	}), $("#treeview11").treeview({
+		color: "#428bca",
+		data: e,
+		onNodeSelected: function(e, o) {
+			$("#event_output").prepend("<p>您单击了 " + o.text + "</p>")
+		}
+	}), $("#treeview12").treeview({
+		data: t
+	})
+});
+		</script>
+		
+	</body>
+
+</html>

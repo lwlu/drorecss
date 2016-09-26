@@ -1,0 +1,236 @@
+.xxsd {
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    height: 100px;
+    background: #f7f5de;
+    z-index: 99999;
+    position: absolute;
+    .logo {
+        background: url("../images/theme-xxsd/logo.png") no-repeat;
+        width: 400px;
+        margin: 10px 30px;
+        float: left;
+        display: block;
+        height: 100px;
+    }
+    @media screen and (max-width:1620px) {
+        .logo {
+            width: 400px;
+            transform: scale(0.6);
+            margin: 10 0 10 -45px;
+        }
+    }
+    .menu-list {
+        background: #f7f5de;
+        height: 100px;
+        position: relative;
+        float: left;
+        li {
+            a {
+                width: 147px;
+                display: block;
+                height: 100px;
+                color: #000000;
+                position: relative;
+                i {
+                    position: absolute;
+                    width: 0;
+                    height: 40px;
+                    top: 16px;
+                    display: block;
+                    background: url("../images/theme-xxsd/select.png") no-repeat;
+                    transition: all 1000ms ease;
+                };
+                span {
+                    position: relative;
+                    transition: all 1000ms ease;
+                    color: #000000;
+                }
+            }
+            a:hover,
+            &.active a {
+                color: #fff;
+            }
+            height: 100px;
+            line-height: 70px;
+            cursor: pointer;
+            font-size: 16px;
+            padding-top: 16px;
+            width: 147px;
+            float: left;
+            &.last {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            };
+            &.active,
+            &:hover {
+                background: none;
+                color: #fff;
+                //background: url("../images/theme-xxsd/select.png") no-repeat 10px 34px;
+                background-size: 100%;
+                i {
+                    width: 137px;
+                }
+                span {
+                    color: #fff;
+                }
+            };
+            &.on {
+                -webkit-animation: twinkling 3s infinite ease-in-out;
+                em {
+                    position: absolute;
+                    right: 25px;
+                    width: 20px;
+                    height: 20px;
+                    background: #F00;
+                    line-height: 20px;
+                    border-radius: 10px;
+                }
+            };
+            &off {
+                em {
+                    display: none;
+                }
+            }
+            i {
+                display: none;
+                margin: 0 auto;
+                height: 40px;
+            };
+        }
+        @media screen and (max-width:1620px) {
+            li {
+                transform: scale(0.8);
+                width: 120px;
+                a {
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+.bottom-bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    background: url("../images/theme-xxsd/bg.png") no-repeat;
+    background-size: 92%;
+    .left {
+        position: absolute;
+        top: 0;
+        left: -28px;
+        width: 643px;
+        height: 324px;
+        background: url("../images/theme-xxsd/left.png") no-repeat;
+        background-size: 50%;
+    }
+    .right {
+        position: absolute;
+        top: 0;
+        right: -236px;
+        width: 472px;
+        height: 193px;
+        background: url("../images/theme-xxsd/right.png") no-repeat;
+        background-size: 50%;
+    }
+    .center {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        width: 331px;
+        height: 118px;
+        -webkit-animation: boat 25s;
+        webkit-animation-iteration-count: 3600;
+        background: url("../images/theme-xxsd/center.png") no-repeat;
+        background-size: 50%;
+    }
+}
+@-webkit-keyframes boat 
+/* Safari and Chrome */
+{
+    0% {
+        left: 51%;
+    }
+    25% {
+        left: 49%;
+    }
+    50% {
+        left: 51%;
+    }
+    75% {
+        left: 49%;
+    }
+    100% {
+        left: 51%;
+    }
+}
+.theme-xxsd {
+    .second-menu {
+        float: left;
+        width: 160px;
+        height: @main-height;
+        min-height: 1080px;
+        background: #f7f5de;
+        color: #7b7a7a;
+        li {
+            height: 60px;
+            line-height: 60px;
+            font-size: 14px;
+            cursor: pointer;
+            padding-left: 30px;
+            text-align: left;
+            margin: 0 5px;
+            a {
+                height: 60px;
+                line-height: 60px;
+                display: block;
+            }
+            &.active {
+                color: #fff;
+                background: url("../images/theme-xxsd/select.png") no-repeat 9px 10px;
+                a {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .layui-layer-title {
+        text-align: left;
+        padding: 0 80px 0 20px;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #bfbfbf;
+        color: #333;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        background-color: #fff;
+        border-radius: 5px 5px 0 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .layui-layer-setwin .layui-layer-close1 {
+        background-position: 0 -40px;
+        cursor: pointer;
+    }
+    .layui-layer-setwin .layui-layer-close1:hover {
+        opacity: 0.7;
+        background-position: 0 -40px;
+    }
+    .layui-layer-setwin a {
+        position: absolute;
+        width: 15px;
+        height: 30px;
+        margin-left: 10px;
+        font-size: 12px;
+        _overflow: hidden;
+        right: 0;
+        top: 0;
+    }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/less" href="less/drore.less" />
+		<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".animation_select").click(function(){
+					$("#animation_box").attr("class","animated "+$(this).data("animation"));
+					return;
+					
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="wrapper wrapper-content animated fadeIn">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>CSS动画 <small>http://daneden.github.io/animate.css/</small></h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" >
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a >选项1</a>
+                                </li>
+                                <li><a >选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content text-center css-animation-box">
+                        <h1 class="text-navy">
+                            Animation.css
+                        </h1>
+                        <p>
+                            Animation.css是一个迷人的动画库，它提供了一堆很酷的，有趣的，跨浏览器的动画，你可以在项目中调用它们。
+                        </p>
+
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="row">
+                            <div class="col-sm-6 text-center">
+
+                                <h4 class="m-b-lg">
+                                    动画效果示例框
+                                </h4>
+
+                                <div id="animation_box" class="animated pulse">
+                                    <div class="text-center wrapper-content animation-text-box">
+                                        <h2>48%</h2>
+                                        <p>市场销售额</p>
+                                    </div>
+                                    <div id="rickshaw_multi" class="rickshaw_graph"><svg width="633" height="250"><g><path d="M0,230.1980198019802Q137.15,204.45544554455444,158.25,200.4950495049505C189.89999999999998,194.55445544554453,284.85,169.80198019801978,316.5,170.79207920792078S443.1,210.3960396039604,474.75,210.3960396039604Q495.85,210.3960396039604,633,170.79207920792078L633,250Q495.85,250,474.75,250C443.1,250,348.15,250,316.5,250S189.89999999999998,250,158.25,250Q137.15,250,0,250Z" class="area" fill="#1ab394"></path><path d="M0,230.1980198019802Q137.15,204.45544554455444,158.25,200.4950495049505C189.89999999999998,194.55445544554453,284.85,169.80198019801978,316.5,170.79207920792078S443.1,210.3960396039604,474.75,210.3960396039604Q495.85,210.3960396039604,633,170.79207920792078" class="line" fill="none" stroke="#17997f" stroke-width="2"></path></g><g><path d="M0,101.48514851485149Q137.15,58.58085808580857,158.25,51.980198019801975C189.89999999999998,42.07920792079208,284.85,-1.4851485148514705,316.5,2.47524752475249S443.1,84.65346534653466,474.75,91.58415841584159Q495.85,96.20462046204621,633,71.78217821782178L633,170.79207920792078Q495.85,210.3960396039604,474.75,210.3960396039604C443.1,210.3960396039604,348.15,171.78217821782178,316.5,170.79207920792078S189.89999999999998,194.55445544554453,158.25,200.4950495049505Q137.15,204.45544554455444,0,230.1980198019802Z" class="area" fill="#eeeeee"></path><path d="M0,101.48514851485149Q137.15,58.58085808580857,158.25,51.980198019801975C189.89999999999998,42.07920792079208,284.85,-1.4851485148514705,316.5,2.47524752475249S443.1,84.65346534653466,474.75,91.58415841584159Q495.85,96.20462046204621,633,71.78217821782178" class="line" fill="none" stroke="#d7d7d7" stroke-width="2"></path></g></svg></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 animation-efect-links text-center">
+                                <h4 class="m-b-lg">
+                                    点击下面按钮，可以从“动画效果示例框”中预览效果
+                                </h4>
+
+                                <!--<h5 class="text-navy">Attention Seekers</h5>-->
+                                <a  class="btn btn-white animation_select" data-animation="bounce">bounce</a>
+                                <a  class="btn btn-white animation_select" data-animation="flash">flash</a>
+                                <a  class="btn btn-white animation_select" data-animation="pulse">pulse</a>
+                                <a  class="btn btn-white animation_select" data-animation="rubberBand">rubberBand</a>
+                                <a  class="btn btn-white animation_select" data-animation="shake">shake</a>
+                                <a  class="btn btn-white animation_select" data-animation="swing">swing</a>
+                                <a  class="btn btn-white animation_select" data-animation="tada">tada</a>
+                                <a  class="btn btn-white animation_select" data-animation="wobble">wobble</a>
+
+
+                                <!--<h5 class="text-navy">Bouncing Entrances</h5>-->
+                                <a  class="btn btn-white animation_select" data-animation="bounceIn">bounceIn</a>
+                                <a  class="btn btn-white animation_select" data-animation="bounceInDown">bounceInDown</a>
+                                <a  class="btn btn-white animation_select" data-animation="bounceInLeft">bounceInLeft</a>
+                                <a  class="btn btn-white animation_select" data-animation="bounceInRight">bounceInRight</a>
+                                <a  class="btn btn-white animation_select" data-animation="bounceInUp">bounceInUp</a>
+
+
+                                <!--<h5 class="text-navy">Bouncing Exits</h5>-->
+                                <a  class="btn btn-white animation_select" data-animation="bounceOut">bounceOut</a>
+                                <a  class="btn btn-white animation_select" data-animation="bounceOutDown">bounceOutDown</a>
+                                <a  class="btn btn-white animation_select" data-animation="bounceOutLeft">bounceOutLeft</a>
+                                <a  class="btn btn-white animation_select" data-animation="bounceOutRight">bounceOutRight</a>
+                                <a  class="btn btn-white animation_select" data-animation="bounceOutUp">bounceOutUp</a>
+                                <!--<h5 class="text-navy">Fading Entrances</h5>-->
+                                <a  class="btn btn-white animation_select" data-animation="fadeIn">fadeIn</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeInDown">fadeInDown</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeInDownBig">fadeInDownBig</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeInLeft">fadeInLeft</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeInLeftBig">fadeInLeftBig</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeInRight">fadeInRight</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeInRightBig">fadeInRightBig</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeInUp">fadeInUp</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeInUpBig">fadeInUpBig</a>
+                                <!--<h5 class="text-navy">Fading Exits</h5>-->
+                                <a  class="btn btn-white animation_select" data-animation="fadeOut">fadeOut</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeOutDown">fadeOutDown</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeOutDownBig">fadeOutDownBig</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeOutLeft">fadeOutLeft</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeOutLeftBig">fadeOutLeftBig</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeOutRight">fadeOutRight</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeOutRightBig">fadeOutRightBig</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeOutUp">fadeOutUp</a>
+                                <a  class="btn btn-white animation_select" data-animation="fadeOutUpBig">fadeOutUpBig</a>
+                                <!--<h5 class="text-navy">Flippers</h5>-->
+                                <a  class="btn btn-white animation_select" data-animation="flip">flip</a>
+                                <a  class="btn btn-white animation_select" data-animation="flipInX">flipInX</a>
+                                <a  class="btn btn-white animation_select" data-animation="flipInY">flipInY</a>
+                                <a  class="btn btn-white animation_select" data-animation="flipOutX">flipOutX</a>
+                                <a  class="btn btn-white animation_select" data-animation="flipOutY">flipOutY</a>
+
+                                <!--<h5 class="text-navy">Lightspeed</h5>-->
+                                <a  class="btn btn-white animation_select" data-animation="lightSpeedIn">lightSpeedIn</a>
+                                <a  class="btn btn-white animation_select" data-animation="lightSpeedOut">lightSpeedOut</a>
+                                <!--<h5 class="text-navy">Rotating Entrances</h5>-->
+                                <a  class="btn btn-white animation_select" data-animation="rotateIn">rotateIn</a>
+                                <a  class="btn btn-white animation_select" data-animation="rotateInDownLeft">rotateInDownLeft</a>
+                                <a  class="btn btn-white animation_select" data-animation="rotateInDownRight">rotateInDownRight</a>
+                                <a  class="btn btn-white animation_select" data-animation="rotateInUpLeft">rotateInUpLeft</a>
+                                <a  class="btn btn-white animation_select" data-animation="rotateInUpRight">rotateInUpRight</a>
+
+
+                                <!--<h5 class="text-navy">Rotating Exits</h5>-->
+                                <a  class="btn btn-white animation_select" data-animation="rotateOut">rotateOut</a>
+                                <a  class="btn btn-white animation_select" data-animation="rotateOutDownLeft">rotateOutDownLeft</a>
+                                <a  class="btn btn-white animation_select" data-animation="rotateOutDownRight">rotateOutDownRight</a>
+                                <a  class="btn btn-white animation_select" data-animation="rotateOutUpLeft">rotateOutUpLeft</a>
+                                <a  class="btn btn-white animation_select" data-animation="rotateOutUpRight">rotateOutUpRight</a>
+
+                                <!--<h5 class="text-navy">Sliders</h5>-->
+                                <a  class="btn btn-white animation_select" data-animation="slideInDown">slideInDown</a>
+                                <a  class="btn btn-white animation_select" data-animation="slideInLeft">slideInLeft</a>
+                                <a  class="btn btn-white animation_select" data-animation="slideInRight">slideInRight</a>
+                                <a  class="btn btn-white animation_select" data-animation="slideOutLeft">slideOutLeft</a>
+                                <a  class="btn btn-white animation_select" data-animation="slideOutRight">slideOutRight</a>
+                                <a  class="btn btn-white animation_select" data-animation="slideOutUp">slideOutUp</a>
+                                <!--<h5 class="text-navy">Specials</h5>-->
+                                <a  class="btn btn-white animation_select" data-animation="hinge">hinge</a>
+                                <a  class="btn btn-white animation_select" data-animation="rollIn">rollIn</a>
+                                <a  class="btn btn-white animation_select" data-animation="rollOut">rollOut</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+	</body>
+</html>

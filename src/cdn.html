@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />-->
+		<link rel="stylesheet" type="text/css" href="http://cdnnew.drore.com/cdntest/css/bootstrap.css" />
+		<!--自己的css-->
+		<link rel="stylesheet/less" type="text/css" href="less/drore.less" />
+		<link rel="stylesheet" type="text/css" href="http://cdnnew.drore.com/cdntest/less/drore.css" />
+		<script src="js/lib/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$(function(){
+			var cdn = "http://cdn.drore.com/cdn/js/common/";
+			var obj = [{
+				name: "JQ通用版本",
+				url: "jquery.js",
+				docurl: "http://jq",
+				remark:""
+			}, {
+				name: "hover特效",
+				url: "node_modules/hover.css/css/hover-min.css",
+				docurl: "http://ianlunn.github.io/Hover/",
+				remark:""
+			},{
+				name: "backbone",
+				url: "backbone-min.js",
+				docurl: "http://www.css88.com/doc/backbone/",
+				remark:""
+			},{
+				name: "less",
+				url: "less.min.js",
+				docurl: "http://www.1024i.com/demo/less/index.html",
+				remark:""
+			},{
+				name: "turf",
+				url: "turf.js",
+				docurl: "http://turfjs.org/",
+				remark:""
+			},{
+				name: "underscore",
+				url: "underscore.js",
+				docurl: "http://www.bootcss.com/p/underscore/",
+				remark:""
+			},{
+				name: "日期时间选择器",
+				url: "bootstrap-datetimepicker.min.js",
+				docurl: "http://www.bootcss.com/p/bootstrap-datetimepicker/",
+				remark:""
+			},{
+				name: "ol.js",
+				url: "ol.js",
+				docurl: "",
+				remark:""
+			},{
+				name: "ol-debug",
+				url: "ol-debug.js",
+				docurl: "",
+				remark:""
+			},{
+				name: "jquery弹出层插件",
+				url: "layer/layer.js",
+				docurl: "http://layer.layui.com/api.html",
+				remark:""
+			},{
+				name: "分页组件",
+				url: "laypage/laypage.js",
+				docurl: "http://laypage.layui.com/",
+				remark:""
+			},{
+				name: "Recorder.js",
+				url: "Recorder.js",
+				docurl: "",
+				remark:""
+			},{
+				name: "swfobject",
+				url: "swfobject.js",
+				docurl: "http://code.google.com/p/swfobject/",
+				remark:""
+			},{
+				name: "日期控件",
+				url: "WdatePicker.js",
+				docurl: "http://www.my97.net/dp/demo/index.htm",
+				remark:""
+			},{
+				name: "calendar",
+				url: "calendar.js",
+				docurl: "",
+				remark:""
+			},{
+				name: "echarts",
+				url: "echarts.js",
+				docurl: "http://echarts.baidu.com/",
+				remark:""
+			},{
+				name: "echarts-all",
+				url: "echarts-all.js",
+				docurl: "http://echarts.baidu.com/",
+				remark:""
+			},{
+				name: "开关按钮切换",
+				url: "switchery.js",
+				docurl: "",
+				remark:""
+			},{
+				name: "slick.js",
+				url: "slick.js",
+				docurl: "",
+				remark:""
+			},{
+				name: "jquery-migrate.js",
+				url: "jquery-migrate-1.10.js",
+				docurl: "",
+				remark:""
+			},{
+				name: "radialIndicator",
+				url: "radialIndicator.js",
+				docurl: "",
+				remark:""
+			},{
+				name: "hover特效",
+				url: "node_modules/hover.css/css",
+				docurl: "http://ianlunn.github.io/Hover/",
+				remark:""
+			},{
+				name: "scrollreveal",
+				url: "node_modules/scrollreveal/src",
+				docurl: "https://github.com/jlmakes/scrollReveal.js",
+				remark:""
+			},{
+				name: "CSS3简易动画",
+				url: "daneden-animate.css-3.5.2-24-g535a9dd/daneden-animate.css-535a9dd/animate.min.css",
+				docurl: "https://www.awesomes.cn/repo/daneden/animate-css",
+				remark:""
+			},{
+				name: "整页滚动",
+				url: "node_modules/fullpage.js/vendors/scrolloverflow.min.js",
+				docurl: "https://github.com/alvarotrigo/fullPage.js",
+				remark:""
+			},{
+				name: "slide",
+				url: "node_modules/slick-carousel/slick/slick.min.js",
+				docurl: "https://github.com/kenwheeler/slick",
+				remark:""
+			},{
+				name: "视差",
+				url: "skrollr-master/dist/skrollr.min.js",
+				docurl: "https://github.com/Prinzhorn/skrollr",
+				remark:""
+			},{
+				name: "模版",
+				url: "artTemplate-master/src/template.js",
+				docurl: "https://github.com/aui/artTemplate",
+				remark:""
+			},{
+				name: "tween.js",
+				url: "node_modules/tween.js/src/Tween.js",
+				docurl: "https://github.com/tweenjs/tween.js",
+				remark:""
+			},{
+				name: "智能设备的方位的视差引擎",
+				url: "parallax-master/deploy/parallax.min.js",
+				docurl: "https://github.com/wagerfield/parallax",
+				remark:""
+			}]
+			var $table=$("table");
+			$.each(obj, function(i,t) {
+				$table.append("<tr><td>"+t.name+"</td><td><a href="+cdn+t.url+">"+cdn+t.url+"</a></td><td>"+t.docurl+"</td><td>"+t.remark+"</td></tr>");
+			});
+	})
+		
+		</script>
+
+	</head>
+
+	<body>
+		<div class="ibox float-e-margins">
+			<div class="ibox-content">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>name</th>
+							<th>url</th>
+							<th>docurl</th>
+							<th>remark</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</body>
+
+</html>

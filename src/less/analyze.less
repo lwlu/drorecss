@@ -1,0 +1,236 @@
+.analyzeF{
+    overflow: hidden;width: 190px;height:@son-height - @son-top;
+}
+
+.a-search {
+    padding-top: 20px;
+}
+.analyze{
+    width: @son-width - 160px;
+    height: @son-height - @son-top;
+    left: 190px;
+    top: 0;
+    background: #ffffff;
+        overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+.analyze button {
+    width: 60px;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.analyze .button1 {
+    background: #ff7f00;
+    color: #fff;
+    float: left;
+}
+
+.chart-real {
+    width: 46%;
+    height: 289px;
+    text-align: center;
+    background: #fafafa;
+    float: left;
+}
+
+.chart-real h2 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    background: #1fbba6;
+}
+
+.chart-real h2.on {
+    background: #1fbba6;
+}
+
+.chart-real h2.off {
+    background: #b3b3b3;
+}
+
+.chart-real h2.error {
+    background: #ff0000;
+}
+
+.chart-real ul {
+    padding: 0 30px;
+}
+
+.chart-real ul li.first {
+    border-bottom: 1px solid #ededed;
+}
+
+.chart-real ul li {
+    line-height: 120px;
+    height: 100px;
+}
+
+.chart-real ul li p {
+    display: inline-block;
+}
+
+.chart-real ul li strong {
+    font-size: 32px;
+    line-height: 50px;
+    font-weight: normal;
+    display: block;
+    margin-top: 20px;
+}
+
+.chart-real ul li p {
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.chart-real ul li span {
+    color: #666;
+    font-size: 14px;
+    display: block;
+    line-height: 0px;
+}
+
+.select-city {
+    line-height: 33px;
+    height: 33px;
+    border: 2px solid #0180ab;
+    width: 120px;
+    overflow: hidden;
+}
+
+.select-city span {
+    font-size: 14px;
+    width: 60px;
+    text-align: center;
+    display: block;
+    float: left;
+    color: #0180ab;
+    background: #fff;
+}
+
+.select-city span.active {
+    background: #0180ab;
+    color: #fff;
+}
+
+.people-num {
+    line-height: 33px;
+    height: 33px;
+    width: 150px;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 0 0 0 20px;
+}
+
+.people-num span {
+    font-size: 33px;
+}
+
+.pathselect {
+        width: 250px;
+        height: 970px;
+    background: #fff;
+    padding-left: 10px;
+    font-size: 14px;
+    overflow-y: scroll;
+    float: left;
+    text-align: left;
+}
+
+.sel-left {
+    width: 25px;
+    float: left;
+    padding-top: 10px;
+}
+
+.sel-right {
+    width: 200px;
+    float: left;
+    line-height: 30px;
+}
+
+.icon-next{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                cursor: pointer;
+                z-index: 9999;
+                background: #eee url(../images/right.png) no-repeat;
+                -webkit-animation: myfirst 5s;
+                -webkit-animation-iteration-count: infinite;
+                /* Safari and Chrome */
+            }
+            
+            @-webkit-keyframes myfirst
+            /* Safari and Chrome */
+            
+            {
+                0% {
+                    right: 20px;
+                    top: 10%;
+                }
+                25% {
+                    right: 5px;
+                    top: 10%;
+                }
+                50% {
+                    right: 20px;
+                    top: 10%;
+                }
+                75% {
+                    right: 5px;
+                    top: 10%;
+                }
+                100% {
+                    right: 20px;
+                    top: 10%;
+                }
+            }
+            
+            .icon-prev {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                cursor: pointer;
+                z-index: 9999;
+                background:#eee url(../images/left.png) no-repeat;
+                -webkit-animation: prverani 5s;
+                -webkit-animation-iteration-count: infinite;
+                /* Safari and Chrome */
+            }
+            
+            @-webkit-keyframes prverani
+            /* Safari and Chrome */
+            
+            {
+                0% {
+                    left: 20px;
+                    top: 10%;
+                }
+                25% {
+                    left: 5px;
+                    top: 10%;
+                }
+                50% {
+                    left: 20px;
+                    top: 10%;
+                }
+                75% {
+                    left: 5px;
+                    top: 10%;
+                }
+                100% {
+                    left: 20px;
+                    top: 10%;
+                }
+            }
+
+

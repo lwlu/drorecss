@@ -1,0 +1,32 @@
+﻿<jscompress public="http://www.jscompress.cn/" command="import-combineset">
+<combinefile path="drore.UI.js">
+    <auto value="1" />
+    <sourcefile path="..\plugin\diff_match_patch.js" />
+    <sourcefile path="..\plugin\echarts.js" />
+    <sourcefile path="..\plugin\icheck.js" />
+    <sourcefile path="..\plugin\jquery.fancybox.js" />
+    <sourcefile path="..\plugin\jquery.form.js" />
+    <sourcefile path="..\plugin\jquery.nestable.js" />
+    <sourcefile path="..\plugin\jquery.nicescroll.js" />
+    <sourcefile path="..\plugin\jquery.tagsinput.js" />
+    <sourcefile path="..\plugin\plyr.js" />
+    <sourcefile path="..\plugin\strength.js" />
+    <sourcefile path="..\plugin\switchery.js" />
+    <sourcefile path="..\plugin\beautifyhtml.js" />
+    <sourcefile path="..\plugin\bootstrap-inputmask.js" />
+    <sourcefile path="..\plugin\bootstrap-switch.js" />
+    <sourcefile path="..\plugin\bootstrap-treeview.js" />
+    <sourcefile path="..\plugin\custom.js" />
+    <sourcefile path="..\plugin\jquery.blueimp-gallery.js" />
+    <sourcefile path="..\plugin\jquery.pretty-text-diff.js" />
+    <sourcefile path="..\plugin\jquery.steps.js" />
+    <sourcefile path="..\plugin\jquery.validate.js" />
+    <sourcefile path="..\plugin\jstree.js" />
+    <sourcefile path="..\plugin\messages_zh.js" />
+    <sourcefile path="..\plugin\sweetalert.js" />
+    <sourcefile path="..\plugin\toastr.js" />
+    <sourcefile path="..\plugin\fullcalendar.js" />
+    <sourcefile path="..\drore.UI.js" />
+    <sourcefile path="..\plugin\layer\layer.js" />
+</combinefile>
+</jscompress>
