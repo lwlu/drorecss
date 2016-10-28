@@ -9,8 +9,9 @@
 		<!--页面需加载的css-->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<!--自己的css-->
-		<link rel="stylesheet" type="text/css" href="less/drore.css"/>	
-		
+		<link rel="stylesheet" type="text/css" href="less/drore.css" />
+		<link rel="stylesheet" type="text/css" href="css/tipso.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 	</head>
 
 	<body>
@@ -133,8 +134,13 @@
 
 			<ul class="nav left-nav drore-left-nav">
 				<li>
+					<a href="#" id="drore-reorder" class="nav-swtich">
+						<i class="fa fa-reorder"></i>
+					</a>
+				</li>
+				<li>
 					<a href="main2.html" target="main">
-						<i class="fa fa-home"></i>
+						<i class="fa fa-home" id="aaa"></i>
 						<span class="nav-label">主页</span>
 					</a>
 				</li>
@@ -146,10 +152,16 @@
 					</a>
 					<ul class="nav nav-second-level">
 						<li>
-							<a href="#">百度ECharts</a>
+							<a href="#">
+								<i class="fa fa fa-bar-chart-o"></i>
+								<span>百度ECharts</span>
+							</a>
 						</li>
 						<li>
-							<a href="#">hchart</a>
+							<a href="#">
+								<i class="fa fa fa-bar-chart-o"></i>
+								<span class="nav-label">hchart</span>
+							</a>
 						</li>
 					</ul>
 				</li>
@@ -157,150 +169,206 @@
 					<a href="#"><i class="fa fa-edit"></i> <span class="nav-label">表单</span><span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
 						<li>
-							<a href="form.html" target="main">基本表单</a>
+							<a href="form.html" target="main">
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">基本表单</span>
+							</a>
 						</li>
 						<li>
-							<a href="form_wizard.html" target="main">表单向导</a>
+							<a href="form_wizard.html" target="main">
+								<i class="fa fa-edit"></i>
+								<span class="nav-label">表单向导</span>
+							</a>
 						</li>
-						
+
 					</ul>
 				</li>
 				<li>
 					<a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">页面</span><span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
 						<li>
-							<a href="#">项目管理 <span class="fa arrow"></span></a>
+							<a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">项目管理 </span><span class="fa arrow"></span></a>
 							<ul class="nav nav-third-level">
 								<li>
-									<a href="projects.html" target="main">项目</a>
+									<a href="projects.html" target="main">
+										<i class="fa fa-desktop"></i>
+										<span class="nav-label">项目</span>
+									</a>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="calendar.html" target="main">日历</a>
+							<a href="calendar.html" target="main">
+								<i class="fa fa-calendar"></i>
+								<span class="nav-label">日历</span>
+							</a>
 						</li>
 						<li>
-							<a href="#">时间轴 <span class="fa arrow"></span></a>
+							<a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">时间轴 </span><span class="fa arrow"></span></a>
 							<ul class="nav nav-third-level">
 								<li>
-									<a href="timeline.html" target="main">时间轴</a>
+									<a href="timeline.html" target="main">
+										<i class="fa fa-desktop"></i> <span class="nav-label">时间轴</span>
+									</a>
 								</li>
 								<li>
-									<a href="timeline_v2.html" target="main">时间轴v2</a>
+									<a href="timeline_v2.html" target="main">
+										<i class="fa fa-desktop"></i> <span class="nav-label">时间轴v2</span>
+									</a>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="#">登录注册相关 <span class="fa arrow"></span></a>
+							<a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">登录注册相关</span> <span class="fa arrow"></span></a>
 							<ul class="nav nav-third-level">
 								<li>
-									<a href="login.html" target="_blank">登录页面</a>
+									<a href="login.html" target="_blank">
+										<i class="fa fa-desktop"></i> <span class="nav-label">登录页面</span>
+									</a>
 								</li>
 								<li>
-									<a href="login_v2.html" target="_blank">登录页面v2</a>
+									<a href="login_v2.html" target="_blank">
+										<i class="fa fa-desktop"></i> <span class="nav-label">登录页面v2</span>
+									</a>
 								</li>
 								<li>
-									<a href="register.html" target="_blank">注册页面</a>
+									<a href="register.html" target="_blank">
+										<i class="fa fa-desktop"></i> <span class="nav-label">注册页面</span>
+									</a>
 								</li>
 								<li>
-									<a href="lockscreen.html" target="_blank">登录超时</a>
+									<a href="lockscreen.html" target="_blank">
+										<i class="fa fa-desktop"></i> <span class="nav-label">登录超时</span>
+									</a>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="404.html">404页面</a>
+							<a href="404.html"><i class="fa fa-desktop"></i> <span class="nav-label">404页面</span></a>
 						</li>
 						<li>
-							<a href="500.html">500页面</a>
-						</li>						
+							<a href="500.html"><i class="fa fa-desktop"></i> <span class="nav-label">500页面</span></a>
+						</li>
 					</ul>
 				</li>
 				<li>
 					<a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
 						<li>
-							<a href="typography.html" target="main">排版</a>
+							<a href="typography.html" target="main"><i class="fa fa-flask"></i> <span class="nav-label">排版</span></a>
 						</li>
 						<li>
-							<a href="#">字体图标 <span class="fa arrow"></span></a>
+							<a href="#"><i class="fa fa-flask"></i> <span class="nav-label">字体图标</span> <span class="fa arrow"></span></a>
 							<ul class="nav nav-third-level">
 								<li>
-									<a href="fontawesome.html" target="main">Font Awesome</a>
+									<a href="fontawesome.html" target="main">
+										<i class="fa fa-flask"></i> <span class="nav-label">Font Awesome</span>
+									</a>
 								</li>
 								<li>
-									<a href="glyphicons.html" target="main">Glyphicon</a>
+									<a href="glyphicons.html" target="main">
+										<i class="fa fa-flask"></i> <span class="nav-label">Glyphicon</span>
+									</a>
 								</li>
-								
+
 							</ul>
 						</li>
 						<li>
-							<a href="#">拖动排序 <span class="fa arrow"></span></a>
+							<a href="#"><i class="fa fa-flask"></i> <span class="nav-label">拖动排序 </span><span class="fa arrow"></span></a>
 							<ul class="nav nav-third-level">
 								<li>
-									<a href="draggable_panels.html" target="main">拖动面板</a>
+									<a href="draggable_panels.html" target="main">
+										<i class="fa fa-flask"></i> <span class="nav-label">拖动面板</span>
+									</a>
 								</li>
 								<li>
-									<a href="agile_board.html" target="main">任务清单</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="buttons.html" target="main">按钮</a>
-						</li>
-						<li>
-							<a href="tabs_panels.html" target="main">选项卡 &amp; 面板</a>
-						</li>
-						<li>
-							<a href="notifications.html" target="main">通知 &amp; 提示</a>
-						</li>
-						<li>
-							<a href="badges_labels.html" target="main">徽章，标签，进度条</a>
-						</li>
-						<li>
-							<a href="grid_options.html" target="main">栅格</a>
-						</li>
-						<li>
-							<a href="plyr.html" target="main">视频、音频</a>
-						</li>
-						<li>
-							<a href="#">弹框插件 <span class="fa arrow"></span></a>
-							<ul class="nav nav-third-level">
-								<li>
-									<a href="layer.html" target="main">Web弹层组件layer</a>
-								</li>
-								<li>
-									<a href="modal_window.html" target="main">模态窗口</a>
-								</li>
-								<li>
-									<a href="sweetalert.html" target="main">SweetAlert</a>
+									<a href="agile_board.html" target="main">
+										<i class="fa fa-flask"></i> <span class="nav-label">任务清单</span>
+									</a>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="#">树形视图 <span class="fa arrow"></span></a>
+							<a href="buttons.html" target="main"><i class="fa fa-flask"></i> <span class="nav-label">按钮</span></a>
+						</li>
+						<li>
+							<a href="tabs_panels.html" target="main">
+								<i class="fa fa-flask"></i> <span class="nav-label">选项卡 &amp; 面板</span>
+							</a>
+						</li>
+						<li>
+							<a href="notifications.html" target="main">
+								<i class="fa fa-flask"></i> <span class="nav-label">通知 &amp; 提示</span>
+							</a>
+						</li>
+						<li>
+							<a href="badges_labels.html" target="main">
+								<i class="fa fa-flask"></i> <span class="nav-label">徽章，标签，进度条</span>
+							</a>
+						</li>
+						<li>
+							<a href="grid_options.html" target="main">
+								<i class="fa fa-flask"></i> <span class="nav-label">栅格</span>
+							</a>
+						</li>
+						<li>
+							<a href="plyr.html" target="main">
+								<i class="fa fa-flask"></i> <span class="nav-label">视频、音频</span>
+							</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-flask"></i> <span class="nav-label">弹框插件 </span><span class="fa arrow"></span></a>
 							<ul class="nav nav-third-level">
 								<li>
-									<a href="jstree.html" target="main">jsTree</a>
+									<a href="layer.html" target="main">
+										<i class="fa fa-flask"></i> <span class="nav-label">Web弹层组件layer</span>
+									</a>
 								</li>
 								<li>
-									<a href="tree_view.html" target="main">Bootstrap Tree View</a>
+									<a href="modal_window.html" target="main">
+										<i class="fa fa-flask"></i> <span class="nav-label">模态窗口</span>
+									</a>
 								</li>
 								<li>
-									<a href="nestable_list.html" target="main">nestable</a>
+									<a href="sweetalert.html" target="main">
+										<i class="fa fa-flask"></i> <span class="nav-label">SweetAlert</span>
+									</a>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="toastr_notifications.html" target="main">Toastr通知</a>
+							<a href="#"><i class="fa fa-flask"></i> <span class="nav-label">树形视图</span> <span class="fa arrow"></span></a>
+							<ul class="nav nav-third-level">
+								<li>
+									<a href="jstree.html" target="main">
+										<i class="fa fa-flask"></i> <span class="nav-label">jsTree</span>
+									</a>
+								</li>
+								<li>
+									<a href="tree_view.html" target="main">
+										<i class="fa fa-flask"></i> <span class="nav-label">Bootstrap Tree View</span>
+									</a>
+								</li>
+								<li>
+									<a href="nestable_list.html" target="main">
+										<i class="fa fa-flask"></i> <span class="nav-label">nestable</span>
+									</a>
+								</li>
+							</ul>
 						</li>
 						<li>
-							<a href="diff.html" target="main">文本对比</a>
+							<a href="toastr_notifications.html" target="main"><i class="fa fa-flask"></i> <span class="nav-label">Toastr通知</span> </a>
 						</li>
 						<li>
-							<a href="spinners.html" target="main">加载动画</a>
+							<a href="diff.html" target="main">
+								<i class="fa fa-flask"></i> <span class="nav-label">文本对比</span>
+							</a>
 						</li>
 						<li>
-							<a href="widgets.html" target="main">小部件</a>
+							<a href="spinners.html" target="main"><i class="fa fa-flask"></i> <span class="nav-label">加载动画</span> </a>
+						</li>
+						<li>
+							<a href="widgets.html" target="main"><i class="fa fa-flask"></i> <span class="nav-label">小部件</span> </a>
 						</li>
 					</ul>
 				</li>
@@ -308,21 +376,29 @@
 					<a href="#"><i class="fa fa-table"></i> <span class="nav-label">表格</span><span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
 						<li>
-							<a href="table_basic.html" target="main">基本表格</a>
-						</li>						
+							<a href="table_basic.html" target="main">
+								<i class="fa fa-table"></i> <span class="nav-label">基本表格</span>
+							</a>
+						</li>
 					</ul>
 				</li>
 				<li>
 					<a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">相册</span><span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
 						<li>
-							<a href="basic_gallery.html" target="main">基本图库</a>
+							<a href="basic_gallery.html" target="main">
+								<i class="fa fa-picture-o"></i> <span class="nav-label">基本图库</span>
+							</a>
 						</li>
 						<li>
-							<a href="carousel.html" target="main">图片切换</a>
-						</li>						
+							<a href="carousel.html" target="main">
+								<i class="fa fa-picture-o"></i> <span class="nav-label">图片切换</span>
+							</a>
+						</li>
 						<li>
-							<a href="blueimp.html" target="main">Blueimp相册</a>
+							<a href="blueimp.html" target="main">
+								<i class="fa fa-picture-o"></i> <span class="nav-label">Blueimp相册</span>
+							</a>
 						</li>
 					</ul>
 				</li>
@@ -333,8 +409,10 @@
 					<a href="#"><i class="fa fa-cutlery"></i> <span class="nav-label">工具 </span><span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">
 						<li>
-							<a href="form_builder.html" target="main">表单构建器</a>
-						</li>  
+							<a href="form_builder.html" target="main">
+								<i class="fa fa-cutlery"></i> <span class="nav-label">表单构建器 </span>
+							</a>
+						</li>
 					</ul>
 				</li>
 			</ul>
@@ -351,13 +429,164 @@
 				<li class="active">功能1</li>
 			</ol>
 			<iframe src="main2.html" id="con_iframe" name="main"></iframe>
-		<!--框架JS-->
-		<script src="js/lib/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/lib/less.min.js" type="text/javascript" charset="utf-8"></script>			
-		<!--自己的js-->
-		<script src="js/lib/drore.UI.js" type="text/javascript" charset="utf-8"></script>		
-		
+			<!--框架JS-->
+			<script src="js/lib/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/lib/less.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/common/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+			<!--自己的js-->
+			<script src="js/drore.UI.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/tipso.js" type="text/javascript" charset="utf-8"></script>
+
 	</body>
+	<style type="text/css">
+		.drore-left {
+			height: 800px !important;
+		}
+		
+		.left-nav {
+			overflow: auto;
+		}
+		
+		.left-nav::-webkit-scrollbar {
+			display: none
+			/* 隐藏滚动条，但依旧具备可以滚动的功能 */
+		}
+		
+		.left-nav> li:first-child.active {
+			background: none;
+			border-left: none;
+		}
+		
+		.nav-swtich {
+			text-align: center;
+		}
+		
+		.nav-swtich i {
+			transform: rotate(90deg);
+		}
+		
+		.drore-left-min .nav-swtich i {
+			transform: rotate(0deg);
+		}
+		
+		.nav-second-level-min li a {
+			padding: 14px 20px 14px 25px;
+		}
+		
+		.nav-third-level-min li a {
+			padding: 14px 20px 14px 25px;
+		}
+		
+		.drore-left-min {
+			width: 70px;
+			overflow: scroll;
+		}
+		
+		.drore-main-min {
+			margin-left: 60px;
+		}
+		
+		.drore-left-min a:hover {
+			text-indent: 0px;
+		}
+		
+		.nav> li> a:first-child:hover,
+		.nav> li> a:first-child:focus {
+			text-decoration: none;
+			background-color: none;
+		}
+		
+		.tipso_bubble,
+		.tipso_bubble> .tipso_arrow {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		
+		.tipso_bubble {
+			position: absolute;
+			text-align: center;
+			z-index: 9999;
+			padding: 14px 5px;
+			opacity: 0.8;
+			background-color: #3d8acc !important;
+			color: #fff;
+		}
+		
+		.tipso_bubble:before {
+			content: " ";
+			left: -5px;
+			top: 13px width: 0;
+			height: 0;
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			border-right: 5px solid #3d8acc;
+			position: absolute;
+		}
+	</style>
+	<script>
+	$(".drore-left").start();
+//		$(window).resize(function() {
+//			$(".left-nav").height(document.documentElement.clientHeight)
+//		});
+////		$("312").treexxx();
+//
+//		$(function() {
+//
+//			var curY; //获取所选项的Top值
+//			var curH; //获取所选项的Height值
+//			var curW; //获取所选项的Width值
+//			var srtY; //设置提示箭头的Top值
+//			var srtX; //设置提示箭头的Left值
+//			var objL; //获取当前对象
+//
+//			$("#drore-reorder").click(function() {
+//				$(".drore-left").toggleClass("drore-left-min");
+//
+//				$(".drore-left span").show();
+//				$(".nav-third-level").toggleClass("nav-third-level-min");
+//				$(".nav-second-level").toggleClass("nav-second-level-min");
+//				$(".drore-left-min span").hide();
+//				$(".drore-main").toggleClass("drore-main-min");
+//				console.log(document.documentElement.clientHeight)
+//
+//			})
+//
+//			function setInitValue(obj) {
+//				curY = obj.offset().top //152
+//				curH = obj.height(); //46
+//				curW = obj.width(); //64
+//				srtY = curY + (curH / 2) + "px"; //设置提示箭头的Top值175
+//				srtX = curW + obj.offset().left + 7 + "px"; //设置提示箭头的Left值 64
+//			}
+//			$(document).on("mouseenter", ".drore-left-min li", function() {
+//				objL = $(this); //获取当前对象
+//				if($(this).find("#drore-reorder").length == 1) {
+//				} else {
+//					$("body").append("<div class='tipso_bubble  fadeIn' id='tips" + $(this).index() + "'></div>")
+//					setInitValue(objL); //设置当前位置
+//					var allY = curY + "px"; //设置提示框的Top值
+//
+//					var tipsid = '#tips' + $(this).index();
+//					$(tipsid).text($(this).find(">a>span").text())
+//					$(tipsid).css({
+//						"top": allY,
+//						"left": srtX
+//					})
+//
+//				}
+//			})
+//			$(document).on("mouseleave", ".drore-left-min li", function() {
+//					//设置当前所选项的鼠标移出事件
+//					var tipsid = '#tips' + $(this).index();
+//					$(tipsid).removeClass("fadeIn").addClass("animated fadeOut");
+//					t = setTimeout(function() {
+//						$(tipsid).remove()
+//					}, 500);
+//
+//				})
+//		})
+	</script>
 
 </html>
